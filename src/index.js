@@ -6,7 +6,7 @@ const sawayoUrl = "https://work2.sawayo.de/";
 const infoniqaUrl = "https://work.peopleplus.infoniqa.com/";
 
 
-const searchParams = new URLSearchParams(queryString);
+const searchParams = new URLSearchParams(window.location.search);
 
 let url = sawayoUrl;
 if(searchParams.get("tenant") === "infoniqa") {
